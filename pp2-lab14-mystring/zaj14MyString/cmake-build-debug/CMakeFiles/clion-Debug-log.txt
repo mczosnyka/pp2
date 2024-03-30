@@ -1,0 +1,10 @@
+"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Projekty\CLionProjects\pp2-lab14-mystring\zaj14MyString -B C:\Projekty\CLionProjects\pp2-lab14-mystring\zaj14MyString\cmake-build-debug
+Katalog do zbudowanego projektu: C:/Projekty/CLionProjects/pp2-lab14-mystring/zaj14MyString/cmake-build-debug
+ + Znaleziono nagłówki: C:/Projekty/CLionProjects/pp2-lab14-mystring/zaj14MyString/mystring.h
+ + Znaleziono źródła: C:/Projekty/CLionProjects/pp2-lab14-mystring/zaj14MyString/main.cpp;C:/Projekty/CLionProjects/pp2-lab14-mystring/zaj14MyString/mystring.cpp
+ + Znaleziono źródła bez main.cpp: C:/Projekty/CLionProjects/pp2-lab14-mystring/zaj14MyString/mystring.cpp
+ + Znaleziono pliki testów: C:/Projekty/CLionProjects/pp2-lab14-mystring/zaj14MyString/unit_tests/myStringTests.cpp
+ + katalog nagłówków: 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Projekty/CLionProjects/pp2-lab14-mystring/zaj14MyString/cmake-build-debug
