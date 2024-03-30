@@ -1,0 +1,18 @@
+/tmp/tmpx4ar05mp/student/zaj10SortedUniqueVectoredList/SortedUniqueVectoredList.cpp:331:53: warning: Member variable 'SortedUniqueVectoredList::bucketCount_' is not assigned a value in 'SortedUniqueVectoredList::operator='. [operatorEqVarError]
+SortedUniqueVectoredList &SortedUniqueVectoredList::operator=(const SortedUniqueVectoredList &another)
+                                                    ^
+/tmp/tmpx4ar05mp/student/zaj10SortedUniqueVectoredList/SortedUniqueVectoredList.cpp:331:53: warning: 'operator=' should check for assignment to self to avoid problems with dynamic memory. [operatorEqToSelf]
+SortedUniqueVectoredList &SortedUniqueVectoredList::operator=(const SortedUniqueVectoredList &another)
+                                                    ^
+/tmp/tmpx4ar05mp/student/zaj10SortedUniqueVectoredList/SortedUniqueVectoredList.cpp:140:10: warning: The scope of the variable 'insertion_complete' can be reduced. [variableScope]
+    bool insertion_complete = false;
+         ^
+/tmp/tmpx4ar05mp/student/zaj10SortedUniqueVectoredList/SortedUniqueVectoredList.cpp:165:0: warning: The function 'erase' is never used. [unusedFunction]
+void SortedUniqueVectoredList::erase(const string &value)
+^
+/tmp/tmpx4ar05mp/student/zaj10SortedUniqueVectoredList/SortedUniqueVectoredList.cpp:228:0: warning: The function 'move' is never used. [unusedFunction]
+void SortedUniqueVectoredList::move(SortedUniqueVectoredList &&another)
+^
+/tmp/tmpx4ar05mp/student/zaj10SortedUniqueVectoredList/SortedUniqueVectoredList.cpp:234:0: warning: The function 'copy' is never used. [unusedFunction]
+void SortedUniqueVectoredList::copy(const SortedUniqueVectoredList &other)
+^
