@@ -1,0 +1,222 @@
+{
+  "tests": 15,
+  "failures": 1,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2023-03-26T11:44:26Z",
+  "time": "0s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "EnemyTester",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-03-26T11:44:26Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "enemyHasLimitedLife",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/enemyTests.cpp",
+          "line": 16,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "EnemyTester"
+        }
+      ]
+    },
+    {
+      "name": "EngineTester",
+      "tests": 5,
+      "failures": 1,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-03-26T11:44:26Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "engineConstructedWithWidthAndHeight",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/engineTests.cpp",
+          "line": 26,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "EngineTester"
+        },
+        {
+          "name": "engineHasGettersToGetInformationAboutPlayer",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/engineTests.cpp",
+          "line": 38,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "EngineTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/engineTests.cpp:51\nValue of: engine.isPlayerAlieve()\n  Actual: false\nExpected: true",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "engineCanMovePlayer",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/engineTests.cpp",
+          "line": 55,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "EngineTester"
+        },
+        {
+          "name": "engineHandlePlayerShooting",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/engineTests.cpp",
+          "line": 78,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "EngineTester"
+        },
+        {
+          "name": "engineHandlesEnemies",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/engineTests.cpp",
+          "line": 111,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "EngineTester"
+        }
+      ]
+    },
+    {
+      "name": "ObjectTester",
+      "tests": 3,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-03-26T11:44:26Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "constructorWithTwoArguments",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/objectTests.cpp",
+          "line": 15,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "ObjectTester"
+        },
+        {
+          "name": "setPosition",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/objectTests.cpp",
+          "line": 31,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "ObjectTester"
+        },
+        {
+          "name": "movingObject",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/objectTests.cpp",
+          "line": 51,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "ObjectTester"
+        }
+      ]
+    },
+    {
+      "name": "PlayerTester",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-03-26T11:44:26Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "playerIsObject",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/playerTests.cpp",
+          "line": 16,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "PlayerTester"
+        },
+        {
+          "name": "playerCanMoveLikeObject",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/playerTests.cpp",
+          "line": 31,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "PlayerTester"
+        },
+        {
+          "name": "playerHasDirection",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/playerTests.cpp",
+          "line": 49,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "PlayerTester"
+        },
+        {
+          "name": "playerCanDie",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/playerTests.cpp",
+          "line": 66,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "PlayerTester"
+        }
+      ]
+    },
+    {
+      "name": "ShootTester",
+      "tests": 2,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-03-26T11:44:26Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "shootIsObject",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/shootTests.cpp",
+          "line": 16,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "ShootTester"
+        },
+        {
+          "name": "shootHasDirectionAndPosition",
+          "file": "\/tmp\/tmpxpr6awud\/student\/lab3inheritance\/tests\/shootTests.cpp",
+          "line": 30,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-03-26T11:44:26Z",
+          "time": "0s",
+          "classname": "ShootTester"
+        }
+      ]
+    }
+  ]
+}

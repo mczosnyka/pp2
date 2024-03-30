@@ -1,0 +1,102 @@
+==205== Memcheck, a memory error detector
+==205== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==205== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==205== Command: /tmp/tmpxpr6awud/student/lab3inheritance/build//bin/tests
+==205== 
+Running main() from /tmp/tmpxpr6awud/student/lab3inheritance/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 15 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from EnemyTester
+[ RUN      ] EnemyTester.enemyHasLimitedLife
+[       OK ] EnemyTester.enemyHasLimitedLife (19 ms)
+[----------] 1 test from EnemyTester (29 ms total)
+
+[----------] 5 tests from EngineTester
+[ RUN      ] EngineTester.engineConstructedWithWidthAndHeight
+[       OK ] EngineTester.engineConstructedWithWidthAndHeight (24 ms)
+[ RUN      ] EngineTester.engineHasGettersToGetInformationAboutPlayer
+==205== Conditional jump or move depends on uninitialised value(s)
+==205==    at 0x1175D5: EngineTester_engineHasGettersToGetInformationAboutPlayer_Test::TestBody() (engineTests.cpp:51)
+==205==    by 0x165978: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (gtest.cc:2621)
+==205==    by 0x15DCA4: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (gtest.cc:2657)
+==205==    by 0x13812D: testing::Test::Run() (gtest.cc:2696)
+==205==    by 0x138C48: testing::TestInfo::Run() (gtest.cc:2845)
+==205==    by 0x139586: testing::TestSuite::Run() (gtest.cc:3004)
+==205==    by 0x149936: testing::internal::UnitTestImpl::RunAllTests() (gtest.cc:5890)
+==205==    by 0x166A1F: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (gtest.cc:2621)
+==205==    by 0x15EEC4: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (gtest.cc:2657)
+==205==    by 0x147F58: testing::UnitTest::Run() (gtest.cc:5455)
+==205==    by 0x17AB8E: RUN_ALL_TESTS() (gtest.h:2314)
+==205==    by 0x17AB07: main (gtest_main.cc:63)
+==205== 
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/engineTests.cpp:51: Failure
+Value of: engine.isPlayerAlieve()
+  Actual: false
+Expected: true
+[  FAILED  ] EngineTester.engineHasGettersToGetInformationAboutPlayer (44 ms)
+[ RUN      ] EngineTester.engineCanMovePlayer
+[       OK ] EngineTester.engineCanMovePlayer (8 ms)
+[ RUN      ] EngineTester.engineHandlePlayerShooting
+[       OK ] EngineTester.engineHandlePlayerShooting (15 ms)
+[ RUN      ] EngineTester.engineHandlesEnemies
+[       OK ] EngineTester.engineHandlesEnemies (8 ms)
+[----------] 5 tests from EngineTester (104 ms total)
+
+[----------] 3 tests from ObjectTester
+[ RUN      ] ObjectTester.constructorWithTwoArguments
+[       OK ] ObjectTester.constructorWithTwoArguments (4 ms)
+[ RUN      ] ObjectTester.setPosition
+[       OK ] ObjectTester.setPosition (5 ms)
+[ RUN      ] ObjectTester.movingObject
+[       OK ] ObjectTester.movingObject (10 ms)
+[----------] 3 tests from ObjectTester (21 ms total)
+
+[----------] 4 tests from PlayerTester
+[ RUN      ] PlayerTester.playerIsObject
+[       OK ] PlayerTester.playerIsObject (3 ms)
+[ RUN      ] PlayerTester.playerCanMoveLikeObject
+[       OK ] PlayerTester.playerCanMoveLikeObject (3 ms)
+[ RUN      ] PlayerTester.playerHasDirection
+[       OK ] PlayerTester.playerHasDirection (2 ms)
+[ RUN      ] PlayerTester.playerCanDie
+==205== Conditional jump or move depends on uninitialised value(s)
+==205==    at 0x11F1B9: PlayerTester_playerCanDie_Test::TestBody() (playerTests.cpp:72)
+==205==    by 0x165978: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (gtest.cc:2621)
+==205==    by 0x15DCA4: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (gtest.cc:2657)
+==205==    by 0x13812D: testing::Test::Run() (gtest.cc:2696)
+==205==    by 0x138C48: testing::TestInfo::Run() (gtest.cc:2845)
+==205==    by 0x139586: testing::TestSuite::Run() (gtest.cc:3004)
+==205==    by 0x149936: testing::internal::UnitTestImpl::RunAllTests() (gtest.cc:5890)
+==205==    by 0x166A1F: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (gtest.cc:2621)
+==205==    by 0x15EEC4: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (gtest.cc:2657)
+==205==    by 0x147F58: testing::UnitTest::Run() (gtest.cc:5455)
+==205==    by 0x17AB8E: RUN_ALL_TESTS() (gtest.h:2314)
+==205==    by 0x17AB07: main (gtest_main.cc:63)
+==205== 
+[       OK ] PlayerTester.playerCanDie (2 ms)
+[----------] 4 tests from PlayerTester (13 ms total)
+
+[----------] 2 tests from ShootTester
+[ RUN      ] ShootTester.shootIsObject
+[       OK ] ShootTester.shootIsObject (2 ms)
+[ RUN      ] ShootTester.shootHasDirectionAndPosition
+[       OK ] ShootTester.shootHasDirectionAndPosition (8 ms)
+[----------] 2 tests from ShootTester (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 5 test suites ran. (231 ms total)
+[  PASSED  ] 14 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] EngineTester.engineHasGettersToGetInformationAboutPlayer
+
+ 1 FAILED TEST
+==205== 
+==205== HEAP SUMMARY:
+==205==     in use at exit: 0 bytes in 0 blocks
+==205==   total heap usage: 469 allocs, 469 frees, 163,771 bytes allocated
+==205== 
+==205== All heap blocks were freed -- no leaks are possible
+==205== 
+==205== Use --track-origins=yes to see where uninitialised values come from
+==205== For lists of detected and suppressed errors, rerun with: -s
+==205== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

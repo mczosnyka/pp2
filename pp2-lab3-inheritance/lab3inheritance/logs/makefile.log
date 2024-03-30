@@ -1,0 +1,65 @@
+[  7%] Building CXX object tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 14%] Linking CXX static library ../../../lib/libgtest.a
+[ 14%] Built target gtest
+[ 21%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 28%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 28%] Built target gtest_main
+[ 35%] Building CXX object tests/CMakeFiles/tests.dir/engineTests.cpp.o
+[ 50%] Building CXX object tests/CMakeFiles/tests.dir/enemyTests.cpp.o
+[ 50%] Building CXX object tests/CMakeFiles/tests.dir/objectTests.cpp.o
+[ 57%] Building CXX object tests/CMakeFiles/tests.dir/playerTests.cpp.o
+[ 64%] Building CXX object tests/CMakeFiles/tests.dir/__/object.cpp.o
+[ 71%] Building CXX object tests/CMakeFiles/tests.dir/shootTests.cpp.o
+[ 78%] Building CXX object tests/CMakeFiles/tests.dir/__/engine.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/__/enemy.cpp.o
+[ 92%] Building CXX object tests/CMakeFiles/tests.dir/__/stage.cpp.o
+In file included from /tmp/tmpxpr6awud/student/lab3inheritance/enemy.cpp:1:
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h: In constructor ‘Enemy::Enemy(Position, int, ObjectType)’:
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h:21:9: warning: ‘Enemy::healthPoints_’ will be initialized after [-Wreorder]
+   21 |     int healthPoints_;
+      |         ^~~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h:20:9: warning:   ‘int Enemy::lifePercent_’ [-Wreorder]
+   20 |     int lifePercent_;
+      |         ^~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h:24:5: warning:   when initialized here [-Wreorder]
+   24 |     Enemy(Position position, int maxlife = 100, ObjectType type = ObjectType::OBJECT_ENEMY) : Object(type, position), healthPoints_(maxlife), lifePercent_(maxlife){};
+      |     ^~~~~
+In file included from /tmp/tmpxpr6awud/student/lab3inheritance/engine.cpp:6:
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h: In constructor ‘Enemy::Enemy(Position, int, ObjectType)’:
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h:21:9: warning: ‘Enemy::healthPoints_’ will be initialized after [-Wreorder]
+   21 |     int healthPoints_;
+      |         ^~~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h:20:9: warning:   ‘int Enemy::lifePercent_’ [-Wreorder]
+   20 |     int lifePercent_;
+      |         ^~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/enemy.h:24:5: warning:   when initialized here [-Wreorder]
+   24 |     Enemy(Position position, int maxlife = 100, ObjectType type = ObjectType::OBJECT_ENEMY) : Object(type, position), healthPoints_(maxlife), lifePercent_(maxlife){};
+      |     ^~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/engine.cpp: In member function ‘void Engine::randEnemies(Position (*)(int, int))’:
+/tmp/tmpxpr6awud/student/lab3inheritance/engine.cpp:146:37: warning: unused parameter ‘positionGenerator’ [-Wunused-parameter]
+  146 | void Engine::randEnemies(Position (*positionGenerator)(int,int))
+      |                          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tmp/tmpxpr6awud/student/lab3inheritance/tests/engineTests.cpp:8:
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h: In constructor ‘Enemy::Enemy(Position, int, ObjectType)’:
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h:21:9: warning: ‘Enemy::healthPoints_’ will be initialized after [-Wreorder]
+   21 |     int healthPoints_;
+      |         ^~~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h:20:9: warning:   ‘int Enemy::lifePercent_’ [-Wreorder]
+   20 |     int lifePercent_;
+      |         ^~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h:24:5: warning:   when initialized here [-Wreorder]
+   24 |     Enemy(Position position, int maxlife = 100, ObjectType type = ObjectType::OBJECT_ENEMY) : Object(type, position), healthPoints_(maxlife), lifePercent_(maxlife){};
+      |     ^~~~~
+In file included from /tmp/tmpxpr6awud/student/lab3inheritance/tests/enemyTests.cpp:5:
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h: In constructor ‘Enemy::Enemy(Position, int, ObjectType)’:
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h:21:9: warning: ‘Enemy::healthPoints_’ will be initialized after [-Wreorder]
+   21 |     int healthPoints_;
+      |         ^~~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h:20:9: warning:   ‘int Enemy::lifePercent_’ [-Wreorder]
+   20 |     int lifePercent_;
+      |         ^~~~~~~~~~~~
+/tmp/tmpxpr6awud/student/lab3inheritance/tests/../enemy.h:24:5: warning:   when initialized here [-Wreorder]
+   24 |     Enemy(Position position, int maxlife = 100, ObjectType type = ObjectType::OBJECT_ENEMY) : Object(type, position), healthPoints_(maxlife), lifePercent_(maxlife){};
+      |     ^~~~~
+[100%] Linking CXX executable ../bin/tests
+[100%] Built target tests

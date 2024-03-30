@@ -1,0 +1,41 @@
+"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Projekty\CLionProjects\pp2-lab3-inheritance\lab3inheritance -B C:\Projekty\CLionProjects\pp2-lab3-inheritance\lab3inheritance\cmake-build-debug
+-- The C compiler identification is MSVC 19.35.32215.0
+-- The CXX compiler identification is MSVC 19.35.32215.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Katalog do zbudowanego projektu: C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/cmake-build-debug
+ + Znaleziono nagłówki: C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/direction.h;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/enemy.h;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/engine.h;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/object.h;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/player.h;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/position.h;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/shoot.h;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/stage.h
+ + Znaleziono źródła: C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/enemy.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/engine.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/main.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/object.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/stage.cpp
+ + Znaleziono źródła bez main.cpp: C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/enemy.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/engine.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/object.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/stage.cpp
+-- Found Python: C:/Users/Michał Czosnyka/AppData/Local/Programs/Python/Python311/python.exe (found version "3.11.0") found components: Interpreter 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE  
+ + Znaleziono pliki testów: C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/tests/enemyTests.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/tests/engineTests.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/tests/objectTests.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/tests/playerTests.cpp;C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/tests/shootTests.cpp
+ + katalog nagłówków: 
+-- Could NOT find QT (missing: QT_DIR)
+CMake Warning (dev) at game/CMakeLists.txt:12 (find_package):
+  Policy CMP0084 is not set: The FindQt module does not exist for
+  find_package().  Run "cmake --help-policy CMP0084" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find Qt3 (missing: QT_QT_LIBRARY QT_INCLUDE_DIR QT_MOC_EXECUTABLE) 
+CMake was unable to find desired Qt version: 3. Set advanced values QT_QMAKE_EXECUTABLE and QT3_QGLOBAL_H_FILE.
+QT not found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Projekty/CLionProjects/pp2-lab3-inheritance/lab3inheritance/cmake-build-debug
