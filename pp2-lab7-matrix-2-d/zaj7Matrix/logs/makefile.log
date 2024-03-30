@@ -1,0 +1,65 @@
+[ 14%] Building CXX object tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 28%] Linking CXX static library ../../../lib/libgtest.a
+[ 28%] Built target gtest
+[ 42%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 57%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 57%] Built target gtest_main
+[ 71%] Building CXX object tests/CMakeFiles/tests.dir/__/matrix.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/matrixTests.cpp.o
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:11:6: warning: #warning is a GCC extension
+   11 |     #warning "Klasa jest do zaimplementowania. Instrukcja w pliku naglowkowym"
+      |      ^~~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:11:6: warning: #warning "Klasa jest do zaimplementowania. Instrukcja w pliku naglowkowym" [-Wcpp]
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp: In constructor ‘TwoDimensionMatrix::TwoDimensionMatrix()’:
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:17:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   17 |     for (int i = 0; i<size_; i++){
+      |                     ~^~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:18:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   18 |         for (int j = 0; j<size_; j++){
+      |                         ~^~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp: In copy constructor ‘TwoDimensionMatrix::TwoDimensionMatrix(const TwoDimensionMatrix&)’:
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:26:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   26 |     for (int i = 0; i<size_; i++){
+      |                     ~^~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:27:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   27 |         for (int j = 0; j<size_; j++){
+      |                         ~^~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp: In constructor ‘TwoDimensionMatrix::TwoDimensionMatrix(const MatrixElement (*)[2])’:
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:34:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   34 |     for (int i = 0; i<size_; i++) {
+      |                     ~^~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:35:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   35 |         for (int j = 0; j<size_; j++) {
+      |                         ~^~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp: In member function ‘const TwoDimensionMatrix& TwoDimensionMatrix::operator=(TwoDimensionMatrix)’:
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:47:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   47 |         for (int i = 0; i < size_; i++) {
+      |                         ~~^~~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:48:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   48 |             for (int j = 0; j < size_; j++) {
+      |                             ~~^~~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp: In function ‘TwoDimensionMatrix operator+(const TwoDimensionMatrix&, const TwoDimensionMatrix&)’:
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:65:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   65 |     for (int i = 0; i < matrix1.size_ && i < matrix2.size_; i++) {
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:65:44: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   65 |     for (int i = 0; i < matrix1.size_ && i < matrix2.size_; i++) {
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:66:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   66 |         for (int j = 0; j < matrix1.size_ && j < matrix2.size_; j++) {
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:66:48: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   66 |         for (int j = 0; j < matrix1.size_ && j < matrix2.size_; j++) {
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp: In member function ‘TwoDimensionMatrix& TwoDimensionMatrix::operator*=(MatrixElement)’:
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:74:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   74 |     for (int i = 0; i < size_; i++) {
+      |                     ~~^~~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:75:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   75 |         for (int j = 0; j < size_; j++) {
+      |                         ~~^~~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp: In member function ‘TwoDimensionMatrix TwoDimensionMatrix::operator&&(const TwoDimensionMatrix&) const’:
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:84:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   84 |     for (int i = 0; i < size_; i++) {
+      |                     ~~^~~~~~~
+/tmp/tmphn_988jc/student/zaj7Matrix/matrix.cpp:85:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+   85 |         for (int j = 0; j < size_; j++) {
+      |                         ~~^~~~~~~
+[100%] Linking CXX executable ../bin/tests
+[100%] Built target tests

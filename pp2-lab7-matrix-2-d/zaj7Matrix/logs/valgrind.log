@@ -1,0 +1,58 @@
+==164== Memcheck, a memory error detector
+==164== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==164== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==164== Command: /tmp/tmphn_988jc/student/zaj7Matrix/build//bin/tests
+==164== 
+Running main() from /tmp/tmphn_988jc/student/zaj7Matrix/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from MatrixTester
+[ RUN      ] MatrixTester.constructionEmptyMatrix_expectedAllElementsAreZero
+[       OK ] MatrixTester.constructionEmptyMatrix_expectedAllElementsAreZero (17 ms)
+[ RUN      ] MatrixTester.constructionMatrixFromTwoDimensionArray_expectedAllElementsCopied
+[       OK ] MatrixTester.constructionMatrixFromTwoDimensionArray_expectedAllElementsCopied (3 ms)
+[ RUN      ] MatrixTester.constructionMatrixFromAnotherMatrix_expectedAllElementsCopied
+[       OK ] MatrixTester.constructionMatrixFromAnotherMatrix_expectedAllElementsCopied (3 ms)
+[ RUN      ] MatrixTester.assignmentOperatorCopyingDeeply_expectedAllElementsCopied
+[       OK ] MatrixTester.assignmentOperatorCopyingDeeply_expectedAllElementsCopied (3 ms)
+[ RUN      ] MatrixTester.assignmentOperatorCopyingFromItselve_expectedNotCrash
+[       OK ] MatrixTester.assignmentOperatorCopyingFromItselve_expectedNotCrash (4 ms)
+[ RUN      ] MatrixTester.checkingOstreamOperator_expectedAllElementsInStream
+/tmp/tmphn_988jc/student/zaj7Matrix/tests/matrixTests.cpp:159: Failure
+Failed
+operator<< not implemented
+[  FAILED  ] MatrixTester.checkingOstreamOperator_expectedAllElementsInStream (36 ms)
+[ RUN      ] MatrixTester.checkingIstreamOperator_expectedAllElementsReadFromStream
+/tmp/tmphn_988jc/student/zaj7Matrix/tests/matrixTests.cpp:186: Failure
+Failed
+operator>> not implemented
+[  FAILED  ] MatrixTester.checkingIstreamOperator_expectedAllElementsReadFromStream (4 ms)
+[ RUN      ] MatrixTester.multiplicationMatrixMultipliedWithNumber_expectedAllElementsOfMatrixMultiplied
+[       OK ] MatrixTester.multiplicationMatrixMultipliedWithNumber_expectedAllElementsOfMatrixMultiplied (3 ms)
+[ RUN      ] MatrixTester.additionOfTwoMatrixes_expectedMatrixWithSumOfElementsReturned
+[       OK ] MatrixTester.additionOfTwoMatrixes_expectedMatrixWithSumOfElementsReturned (5 ms)
+[ RUN      ] MatrixTester.andOfTwoMatrixes_expectedMatrixWithAllElementsAsResultOfLogicalAndReturned
+[       OK ] MatrixTester.andOfTwoMatrixes_expectedMatrixWithAllElementsAsResultOfLogicalAndReturned (6 ms)
+[ RUN      ] MatrixTester.accessingMatrixByRowAndColumnWithIndexOperator_expectedSuccesfullAccess
+[       OK ] MatrixTester.accessingMatrixByRowAndColumnWithIndexOperator_expectedSuccesfullAccess (3 ms)
+[ RUN      ] MatrixTester.matrixConverseOperatorIntoSizeType_expected2ReturnElementsInEachDimentions
+[       OK ] MatrixTester.matrixConverseOperatorIntoSizeType_expected2ReturnElementsInEachDimentions (2 ms)
+[----------] 12 tests from MatrixTester (111 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (166 ms total)
+[  PASSED  ] 10 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] MatrixTester.checkingOstreamOperator_expectedAllElementsInStream
+[  FAILED  ] MatrixTester.checkingIstreamOperator_expectedAllElementsReadFromStream
+
+ 2 FAILED TESTS
+==164== 
+==164== HEAP SUMMARY:
+==164==     in use at exit: 0 bytes in 0 blocks
+==164==   total heap usage: 398 allocs, 398 frees, 142,077 bytes allocated
+==164== 
+==164== All heap blocks were freed -- no leaks are possible
+==164== 
+==164== For lists of detected and suppressed errors, rerun with: -s
+==164== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
