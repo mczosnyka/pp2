@@ -1,0 +1,15 @@
+# ninja log v5
+8	664	7034686850486553	lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	d7c2c071659cea14
+5	2055	7034686864373607	lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	915cb4b7efae4cd6
+2117	2153	7034686865383773	lib/gtest_main.lib	728439f4cb89659a
+0	1114	7034756285171626	CMakeFiles/tests.dir/shapesTests.obj	d761242edeea3b02
+2055	2117	7034686864933555	lib/gtest.lib	131c567673ed1508
+12	499	7034756279020005	CMakeFiles/tests.dir/C_/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/circle.obj	ec52356964ee64e1
+6	500	7034756279030000	CMakeFiles/tests.dir/C_/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/ShapeComposite.obj	ebc06d30885c7276
+16	526	7034756279279997	CMakeFiles/tests.dir/C_/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/rectangle.obj	b6bf8a0581bbe8bd
+0	11	0	clean	a84090cb4edd80de
+9	945	7034758388216314	lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	d7c2c071659cea14
+1	1007	7034758388822454	CMakeFiles/tests.dir/shapesTests.obj	d761242edeea3b02
+5	1857	7034758397300700	lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	915cb4b7efae4cd6
+1857	1914	7034758397849256	lib/gtest.lib	131c567673ed1508
+1914	1952	7034758398291377	lib/gtest_main.lib	728439f4cb89659a

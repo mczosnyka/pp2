@@ -1,0 +1,15 @@
+/tmp/tmpmfkq3aw3/student/zaj6ShapeDrawing/circle.cpp:17:0: warning: The function 'x' is never used. [unusedFunction]
+    int Circle::x() const{
+^
+/tmp/tmpmfkq3aw3/student/zaj6ShapeDrawing/circle.cpp:20:0: warning: The function 'y' is never used. [unusedFunction]
+    int Circle::y() const{
+^
+/tmp/tmpmfkq3aw3/student/zaj6ShapeDrawing/circle.cpp:23:0: warning: The function 'getRadius' is never used. [unusedFunction]
+    int Circle::getRadius()const{
+^
+/tmp/tmpmfkq3aw3/student/zaj6ShapeDrawing/rectangle.cpp:15:0: warning: The function 'xTo' is never used. [unusedFunction]
+    int Rectangle::xTo() const{
+^
+/tmp/tmpmfkq3aw3/student/zaj6ShapeDrawing/rectangle.cpp:18:0: warning: The function 'yTo' is never used. [unusedFunction]
+    int Rectangle::yTo() const{
+^

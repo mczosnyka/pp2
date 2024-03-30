@@ -1,0 +1,10 @@
+"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Projekty\CLionProjects\pp2-lab6-shapesdrawing\zaj6ShapeDrawing -B C:\Projekty\CLionProjects\pp2-lab6-shapesdrawing\zaj6ShapeDrawing\cmake-build-debug
+Katalog do zbudowanego projektu: C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/cmake-build-debug
+ + Znaleziono nagłówki: C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/circle.h;C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/rectangle.h;C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/shape.h
+ + Znaleziono źródła: C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/circle.cpp;C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/main.cpp;C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/rectangle.cpp
+ + Znaleziono źródła bez main.cpp: C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/circle.cpp;C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/rectangle.cpp
+ + Znaleziono pliki testów: C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/tests/shapesTests.cpp
+ + katalog nagłówków: 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Projekty/CLionProjects/pp2-lab6-shapesdrawing/zaj6ShapeDrawing/cmake-build-debug
