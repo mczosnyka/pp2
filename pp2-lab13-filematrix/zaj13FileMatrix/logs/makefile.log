@@ -1,0 +1,154 @@
+[ 14%] Building CXX object unitTests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 28%] Linking CXX static library ../../../lib/libgtest.a
+[ 28%] Built target gtest
+[ 42%] Building CXX object unitTests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 57%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 57%] Built target gtest_main
+[ 71%] Building CXX object unitTests/CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o
+[ 85%] Building CXX object unitTests/CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o
+[100%] Linking CXX executable ../bin/unit_tests
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_initialisationOfSingleElementMatrix_expectedFileCreated_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x43e): undefined reference to `FileMatrix<int, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x707): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x859): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_initialisationOfMatrixSingleColumnButMultipleRows_expectedFileWithProperSizeCreated_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x9bc): undefined reference to `FileMatrix<float, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0xc85): undefined reference to `FileMatrix<float, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0xdd7): undefined reference to `FileMatrix<float, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_initialisationOfMatrixMultipleColumnAndSingleRow_expectedFileWithProperSizeCreated_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0xf3a): undefined reference to `FileMatrix<double, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x1203): undefined reference to `FileMatrix<double, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x1355): undefined reference to `FileMatrix<double, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_initialisationOfSquareMatrixMultipleColumnAndMultipleRows_expectedFileWithProperSizeCreated_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x14b8): undefined reference to `FileMatrix<long long, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x1781): undefined reference to `FileMatrix<long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x18d3): undefined reference to `FileMatrix<long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_accesingMatrixDataWithTooGreatIndex_expectedThrowingOutOfRangeException_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x1a36): undefined reference to `FileMatrix<unsigned long, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x1ab2): undefined reference to `FileMatrix<unsigned long, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x1e4e): undefined reference to `FileMatrix<unsigned long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2160): undefined reference to `FileMatrix<unsigned long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_accesingMatrixElementsWithIndex_expectedSucessfullWriteAndRead_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x22c2): undefined reference to `FileMatrix<char, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2345): undefined reference to `FileMatrix<char, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x23b2): undefined reference to `FileMatrix<char, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x26c7): undefined reference to `FileMatrix<char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2828): undefined reference to `FileMatrix<char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_comparingOfMatrixesWithTheSameData_expectedComparationReturnsTrue_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x2a47): undefined reference to `FileMatrix<signed char, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2a6a): undefined reference to `FileMatrix<signed char, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2af0): undefined reference to `FileMatrix<signed char, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2b1e): undefined reference to `FileMatrix<signed char, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2b8b): undefined reference to `FileMatrix<signed char, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x2b9a): undefined reference to `FileMatrix<signed char, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x324c): undefined reference to `FileMatrix<signed char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x326c): undefined reference to `FileMatrix<signed char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x3539): undefined reference to `FileMatrix<signed char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x3551): undefined reference to `FileMatrix<signed char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_comparingDifferentMatrixesWithTheSameNumberOfRowsAndColumnsButDifferentData_expectedComparationReturnsFalse_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x37a1): undefined reference to `FileMatrix<long, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x37c4): undefined reference to `FileMatrix<long, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x3825): undefined reference to `FileMatrix<long, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x3859): undefined reference to `FileMatrix<long, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x38a8): undefined reference to `FileMatrix<long, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x38b7): undefined reference to `FileMatrix<long, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x38d8): undefined reference to `FileMatrix<long, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x3922): undefined reference to `FileMatrix<long, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x3f5e): undefined reference to `FileMatrix<long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x3f7e): undefined reference to `FileMatrix<long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x423c): undefined reference to `FileMatrix<long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x4254): undefined reference to `FileMatrix<long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_copyConstruction_expectedFileCopiedWithEqualBinaryData_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x446e): undefined reference to `FileMatrix<int, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x4507): undefined reference to `FileMatrix<int, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x457e): undefined reference to `FileMatrix<int, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x4597): undefined reference to `FileMatrix<int, unsigned long>::FileMatrix(FileMatrix<int, unsigned long> const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x4bfd): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x4c3d): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x4eeb): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x4f12): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_assignmentOperatorCopying_expectedMatricesTheSame_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x5144): undefined reference to `FileMatrix<unsigned long long, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5167): undefined reference to `FileMatrix<unsigned long long, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x51fe): undefined reference to `FileMatrix<unsigned long long, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5277): undefined reference to `FileMatrix<unsigned long long, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5290): undefined reference to `FileMatrix<unsigned long long, unsigned long>::operator=(FileMatrix<unsigned long long, unsigned long> const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x529f): undefined reference to `FileMatrix<unsigned long long, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x594f): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x596f): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5c2c): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5c44): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_moveConstruction_expectedFileMovedButSourceObjectUsable_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x5e76): undefined reference to `FileMatrix<short, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5f0f): undefined reference to `FileMatrix<short, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5f87): undefined reference to `FileMatrix<short, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x5fab): undefined reference to `FileMatrix<short, unsigned long>::FileMatrix(FileMatrix<short, unsigned long>&&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x66ec): undefined reference to `FileMatrix<short, unsigned long>::operator=(FileMatrix<short, unsigned long> const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x67f7): undefined reference to `FileMatrix<short, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x6837): undefined reference to `FileMatrix<short, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x6b63): undefined reference to `FileMatrix<short, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x6b8a): undefined reference to `FileMatrix<short, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_assignmentOperatorMoving_expectedFileMovedButSourceObjectUsable_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x6dbc): undefined reference to `FileMatrix<unsigned long long, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x6e6c): undefined reference to `FileMatrix<unsigned long long, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x6ee5): undefined reference to `FileMatrix<unsigned long long, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x6f09): undefined reference to `FileMatrix<unsigned long long, unsigned long>::operator=(FileMatrix<unsigned long long, unsigned long>&&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x6f18): undefined reference to `FileMatrix<unsigned long long, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x7659): undefined reference to `FileMatrix<unsigned long long, unsigned long>::operator=(FileMatrix<unsigned long long, unsigned long> const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x7784): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x77a4): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x7adf): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x7af7): undefined reference to `FileMatrix<unsigned long long, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_containerHasBeginEndMethodsReturningIterator_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x7ca2): undefined reference to `FileMatrix<char, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x7d25): undefined reference to `FileMatrix<char, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x7d92): undefined reference to `FileMatrix<char, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x812c): undefined reference to `FileMatrix<char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x82bd): undefined reference to `FileMatrix<char, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_containerHasIteratowWorkingWithForLoop_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x8420): undefined reference to `FileMatrix<int, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x84a6): undefined reference to `FileMatrix<int, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x851a): undefined reference to `FileMatrix<int, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x88b4): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x8a45): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrixTester_containerHasIteratowWorkingWithStl_Test::TestBody()':
+FileMatrixTests.cpp:(.text+0x8ba8): undefined reference to `FileMatrix<int, unsigned long>::FileMatrix(unsigned long, unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x8c2e): undefined reference to `FileMatrix<int, unsigned long>::operator[](unsigned long)'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x8ca2): undefined reference to `FileMatrix<int, unsigned long>::flush()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x903c): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: FileMatrixTests.cpp:(.text+0x91cd): undefined reference to `FileMatrix<int, unsigned long>::~FileMatrix()'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `testing::AssertionResult testing::internal::CmpHelperEQ<FileMatrix<signed char, unsigned long>, FileMatrix<signed char, unsigned long> >(char const*, char const*, FileMatrix<signed char, unsigned long> const&, FileMatrix<signed char, unsigned long> const&)':
+FileMatrixTests.cpp:(.text._ZN7testing8internal11CmpHelperEQI10FileMatrixIamES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_[_ZN7testing8internal11CmpHelperEQI10FileMatrixIamES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_]+0x3e): undefined reference to `FileMatrix<signed char, unsigned long>::operator==(FileMatrix<signed char, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrix<long, unsigned long>::operator!=(FileMatrix<long, unsigned long> const&) const':
+FileMatrixTests.cpp:(.text._ZNK10FileMatrixIlmEneERKS0_[_ZNK10FileMatrixIlmEneERKS0_]+0x23): undefined reference to `FileMatrix<long, unsigned long>::operator==(FileMatrix<long, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `testing::AssertionResult testing::internal::CmpHelperEQ<FileMatrix<int, unsigned long>, FileMatrix<int, unsigned long> >(char const*, char const*, FileMatrix<int, unsigned long> const&, FileMatrix<int, unsigned long> const&)':
+FileMatrixTests.cpp:(.text._ZN7testing8internal11CmpHelperEQI10FileMatrixIimES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_[_ZN7testing8internal11CmpHelperEQI10FileMatrixIimES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_]+0x3e): undefined reference to `FileMatrix<int, unsigned long>::operator==(FileMatrix<int, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `testing::AssertionResult testing::internal::CmpHelperEQ<FileMatrix<unsigned long long, unsigned long>, FileMatrix<unsigned long long, unsigned long> >(char const*, char const*, FileMatrix<unsigned long long, unsigned long> const&, FileMatrix<unsigned long long, unsigned long> const&)':
+FileMatrixTests.cpp:(.text._ZN7testing8internal11CmpHelperEQI10FileMatrixIymES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_[_ZN7testing8internal11CmpHelperEQI10FileMatrixIymES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_]+0x3e): undefined reference to `FileMatrix<unsigned long long, unsigned long>::operator==(FileMatrix<unsigned long long, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrix<short, unsigned long>::operator!=(FileMatrix<short, unsigned long> const&) const':
+FileMatrixTests.cpp:(.text._ZNK10FileMatrixIsmEneERKS0_[_ZNK10FileMatrixIsmEneERKS0_]+0x23): undefined reference to `FileMatrix<short, unsigned long>::operator==(FileMatrix<short, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `testing::AssertionResult testing::internal::CmpHelperEQ<FileMatrix<short, unsigned long>, FileMatrix<short, unsigned long> >(char const*, char const*, FileMatrix<short, unsigned long> const&, FileMatrix<short, unsigned long> const&)':
+FileMatrixTests.cpp:(.text._ZN7testing8internal11CmpHelperEQI10FileMatrixIsmES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_[_ZN7testing8internal11CmpHelperEQI10FileMatrixIsmES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_]+0x3e): undefined reference to `FileMatrix<short, unsigned long>::operator==(FileMatrix<short, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/FileMatrixTests.cpp.o: in function `FileMatrix<unsigned long long, unsigned long>::operator!=(FileMatrix<unsigned long long, unsigned long> const&) const':
+FileMatrixTests.cpp:(.text._ZNK10FileMatrixIymEneERKS0_[_ZNK10FileMatrixIymEneERKS0_]+0x23): undefined reference to `FileMatrix<unsigned long long, unsigned long>::operator==(FileMatrix<unsigned long long, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<signed char, unsigned long>::operator!=(FileMatrix<signed char, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixIamEneERKS0_[_ZNK10FileMatrixIamEneERKS0_]+0x23): undefined reference to `FileMatrix<signed char, unsigned long>::operator==(FileMatrix<signed char, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<int, unsigned long>::operator!=(FileMatrix<int, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixIimEneERKS0_[_ZNK10FileMatrixIimEneERKS0_]+0x23): undefined reference to `FileMatrix<int, unsigned long>::operator==(FileMatrix<int, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<double, unsigned long>::operator!=(FileMatrix<double, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixIdmEneERKS0_[_ZNK10FileMatrixIdmEneERKS0_]+0x23): undefined reference to `FileMatrix<double, unsigned long>::operator==(FileMatrix<double, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<float, unsigned long>::operator!=(FileMatrix<float, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixIfmEneERKS0_[_ZNK10FileMatrixIfmEneERKS0_]+0x23): undefined reference to `FileMatrix<float, unsigned long>::operator==(FileMatrix<float, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<unsigned long, unsigned long>::operator!=(FileMatrix<unsigned long, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixImmEneERKS0_[_ZNK10FileMatrixImmEneERKS0_]+0x23): undefined reference to `FileMatrix<unsigned long, unsigned long>::operator==(FileMatrix<unsigned long, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<char, unsigned long>::operator!=(FileMatrix<char, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixIcmEneERKS0_[_ZNK10FileMatrixIcmEneERKS0_]+0x23): undefined reference to `FileMatrix<char, unsigned long>::operator==(FileMatrix<char, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<unsigned int, unsigned long>::operator!=(FileMatrix<unsigned int, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixIjmEneERKS0_[_ZNK10FileMatrixIjmEneERKS0_]+0x23): undefined reference to `FileMatrix<unsigned int, unsigned long>::operator==(FileMatrix<unsigned int, unsigned long> const&) const'
+/usr/bin/ld: CMakeFiles/unit_tests.dir/__/FileMatrix.cpp.o: in function `FileMatrix<long long, unsigned long>::operator!=(FileMatrix<long long, unsigned long> const&) const':
+FileMatrix.cpp:(.text._ZNK10FileMatrixIxmEneERKS0_[_ZNK10FileMatrixIxmEneERKS0_]+0x23): undefined reference to `FileMatrix<long long, unsigned long>::operator==(FileMatrix<long long, unsigned long> const&) const'
+collect2: error: ld returned 1 exit status
+make[3]: *** [unitTests/CMakeFiles/unit_tests.dir/build.make:116: bin/unit_tests] Error 1
+make[2]: *** [CMakeFiles/Makefile2:318: unitTests/CMakeFiles/unit_tests.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:325: unitTests/CMakeFiles/unit_tests.dir/rule] Error 2
+make: *** [Makefile:247: unit_tests] Error 2
