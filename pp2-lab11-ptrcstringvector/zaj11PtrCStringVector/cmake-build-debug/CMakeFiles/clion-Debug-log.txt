@@ -1,0 +1,30 @@
+"C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Projekty\CLionProjects\pp2-lab11-ptrcstringvector\zaj11PtrCStringVector -B C:\Projekty\CLionProjects\pp2-lab11-ptrcstringvector\zaj11PtrCStringVector\cmake-build-debug
+-- The C compiler identification is MSVC 19.35.32215.0
+-- The CXX compiler identification is MSVC 19.35.32215.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.35.32215/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Katalog do zbudowanego projektu: C:/Projekty/CLionProjects/pp2-lab11-ptrcstringvector/zaj11PtrCStringVector/cmake-build-debug
+ + Znaleziono nagłówki: C:/Projekty/CLionProjects/pp2-lab11-ptrcstringvector/zaj11PtrCStringVector/PtrCStringVector.h
+ + Znaleziono źródła: C:/Projekty/CLionProjects/pp2-lab11-ptrcstringvector/zaj11PtrCStringVector/PtrCStringVector.cpp;C:/Projekty/CLionProjects/pp2-lab11-ptrcstringvector/zaj11PtrCStringVector/main.cpp
+ + Znaleziono źródła bez main.cpp: C:/Projekty/CLionProjects/pp2-lab11-ptrcstringvector/zaj11PtrCStringVector/PtrCStringVector.cpp
+-- Found Python: C:/Users/Michał Czosnyka/AppData/Local/Programs/Python/Python311/python.exe (found version "3.11.0") found components: Interpreter 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE  
+ + Znaleziono pliki testów: C:/Projekty/CLionProjects/pp2-lab11-ptrcstringvector/zaj11PtrCStringVector/unitTests/PtrCStringVectorTests.cpp
+ + katalog nagłówków: 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Projekty/CLionProjects/pp2-lab11-ptrcstringvector/zaj11PtrCStringVector/cmake-build-debug

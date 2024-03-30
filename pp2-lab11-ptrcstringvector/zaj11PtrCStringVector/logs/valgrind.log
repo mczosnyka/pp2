@@ -1,0 +1,82 @@
+==164== Memcheck, a memory error detector
+==164== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==164== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==164== Command: /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build//bin/unit_tests
+==164== 
+Running main() from /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/unitTests/lib/googletest/src/gtest_main.cc
+[==========] Running 20 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 20 tests from PtrCStringVectorTester
+[ RUN      ] PtrCStringVectorTester.defaultConstructor_sizeOfEmptyContainerIsZero
+[       OK ] PtrCStringVectorTester.defaultConstructor_sizeOfEmptyContainerIsZero (16 ms)
+[ RUN      ] PtrCStringVectorTester.pushBack_sizeOfContainerIncreaseAfterCallingPushBack
+[       OK ] PtrCStringVectorTester.pushBack_sizeOfContainerIncreaseAfterCallingPushBack (5 ms)
+[ RUN      ] PtrCStringVectorTester.arrayIndexingOperator_testsInTheSamePositionsAsPushed
+[       OK ] PtrCStringVectorTester.arrayIndexingOperator_testsInTheSamePositionsAsPushed (4 ms)
+[ RUN      ] PtrCStringVectorTester.arrayIndexingOperator_throwingExceptionWhenOutOfRange
+[       OK ] PtrCStringVectorTester.arrayIndexingOperator_throwingExceptionWhenOutOfRange (41 ms)
+[ RUN      ] PtrCStringVectorTester.copyConstructor_textsDeeplyCopied
+[       OK ] PtrCStringVectorTester.copyConstructor_textsDeeplyCopied (8 ms)
+[ RUN      ] PtrCStringVectorTester.assignmentOperator_copyingContainerDeeply
+[       OK ] PtrCStringVectorTester.assignmentOperator_copyingContainerDeeply (7 ms)
+[ RUN      ] PtrCStringVectorTester.assignmentOperator_assignmentCascadeAtOnceExpectingDeepCopyMultipleTimesEvenWithItselve
+[       OK ] PtrCStringVectorTester.assignmentOperator_assignmentCascadeAtOnceExpectingDeepCopyMultipleTimesEvenWithItselve (6 ms)
+[ RUN      ] PtrCStringVectorTester.assignmentOperator_movingTextFromAnotherContainer
+[       OK ] PtrCStringVectorTester.assignmentOperator_movingTextFromAnotherContainer (8 ms)
+[ RUN      ] PtrCStringVectorTester.addOperator_expectReturningContainerContainingAllElementsFromAddedContainers
+[       OK ] PtrCStringVectorTester.addOperator_expectReturningContainerContainingAllElementsFromAddedContainers (6 ms)
+[ RUN      ] PtrCStringVectorTester.bitAndOperator_expectReturningContainerContainingMergedTextsFromCorrespondingPositionsAddedContainers
+[       OK ] PtrCStringVectorTester.bitAndOperator_expectReturningContainerContainingMergedTextsFromCorrespondingPositionsAddedContainers (9 ms)
+[ RUN      ] PtrCStringVectorTester.antytest1
+[       OK ] PtrCStringVectorTester.antytest1 (415 ms)
+[ RUN      ] PtrCStringVectorTester.antytest2
+[       OK ] PtrCStringVectorTester.antytest2 (436 ms)
+[ RUN      ] PtrCStringVectorTester.antytest3
+[       OK ] PtrCStringVectorTester.antytest3 (1601 ms)
+[ RUN      ] PtrCStringVectorTester.antytest4
+[       OK ] PtrCStringVectorTester.antytest4 (121 ms)
+[ RUN      ] PtrCStringVectorTester.antytest5
+[       OK ] PtrCStringVectorTester.antytest5 (5 ms)
+[ RUN      ] PtrCStringVectorTester.antytest6
+[       OK ] PtrCStringVectorTester.antytest6 (14 ms)
+[ RUN      ] PtrCStringVectorTester.antytest7
+[       OK ] PtrCStringVectorTester.antytest7 (1434 ms)
+[ RUN      ] PtrCStringVectorTester.antytest8
+[       OK ] PtrCStringVectorTester.antytest8 (2771 ms)
+[ RUN      ] PtrCStringVectorTester.antytest9
+[       OK ] PtrCStringVectorTester.antytest9 (1904 ms)
+[ RUN      ] PtrCStringVectorTester.antytest10
+[       OK ] PtrCStringVectorTester.antytest10 (1896 ms)
+[----------] 20 tests from PtrCStringVectorTester (10761 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 1 test suite ran. (10813 ms total)
+[  PASSED  ] 20 tests.
+==164== 
+==164== HEAP SUMMARY:
+==164==     in use at exit: 581 bytes in 6 blocks
+==164==   total heap usage: 865,479 allocs, 865,473 frees, 567,483,734 bytes allocated
+==164== 
+==164== 581 (64 direct, 517 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 2
+==164==    at 0x484A2F3: operator new[](unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==164==    by 0x1220D2: PtrCStringVector::reserve(unsigned long) (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x121BEB: PtrCStringVector::push_back(char const*) (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x11762A: PtrCStringVectorTester_assignmentOperator_assignmentCascadeAtOnceExpectingDeepCopyMultipleTimesEvenWithItselve_Test::TestBody() (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x162FE6: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x15B33C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x135E13: testing::Test::Run() (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x13692E: testing::TestInfo::Run() (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x13726C: testing::TestSuite::Run() (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x14761C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x16408D: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164==    by 0x15C522: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/build/bin/unit_tests)
+==164== 
+==164== LEAK SUMMARY:
+==164==    definitely lost: 64 bytes in 1 blocks
+==164==    indirectly lost: 517 bytes in 5 blocks
+==164==      possibly lost: 0 bytes in 0 blocks
+==164==    still reachable: 0 bytes in 0 blocks
+==164==         suppressed: 0 bytes in 0 blocks
+==164== 
+==164== For lists of detected and suppressed errors, rerun with: -s
+==164== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

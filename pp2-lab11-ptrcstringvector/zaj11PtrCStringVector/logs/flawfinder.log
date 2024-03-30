@@ -1,0 +1,22 @@
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:25:17:  [4] (buffer) strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).  Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy easily misused). 
+                strcpy(data_[i], srcPtrCStringVector.data_[i]);
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:54:9:  [4] (buffer) strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).  Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy easily misused). 
+        strcpy(data_[i], source.data_[i]);
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:87:5:  [4] (buffer) strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).  Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy easily misused). 
+    strcpy(data_[size_], text2Add);
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:130:9:  [4] (buffer) strcpy:Does not check for buffer overflows when copying to destination [MS-banned] (CWE-120).  Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy easily misused). 
+        strcpy(summ, data_[i]);
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:131:9:  [4] (buffer) strcat:Does not check for buffer overflows when concatenating to destination [MS-banned] (CWE-120).  Consider using strcat_s, strncat, strlcat, or snprintf (warning: strncat is easily misused). 
+        strcat(summ, rhs.data_[i]);
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:155:27:  [2] (buffer) char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120).  Perform bounds checking, use functions that limit length, or ensure that the size is larger than the maximum possible length. 
+    char **new_data = new char *[new_capacity];
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:24:37:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
+                data_[i] = new char[strlen(srcPtrCStringVector.data_[i]) + 1];
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:53:29:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
+        data_[i] = new char[strlen(source.data_[i]) + 1];
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:86:29:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
+    data_[size_] = new char[strlen(text2Add)+1];
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:129:31:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
+        char* summ = new char[strlen(data_[i]) + strlen(rhs.data_[i]) + 1];
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:129:50:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
+        char* summ = new char[strlen(data_[i]) + strlen(rhs.data_[i]) + 1];

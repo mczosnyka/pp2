@@ -1,0 +1,15 @@
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:43:37: warning: 'operator=' should check for assignment to self to avoid problems with dynamic memory. [operatorEqToSelf]
+PtrCStringVector &PtrCStringVector::operator=(const PtrCStringVector &source)
+                                    ^
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:127:12: warning: Local variable 'size' shadows outer function [shadowFunction]
+    size_t size = min(size_, rhs.size_);
+           ^
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.h:73:10: note: Shadowed declaration
+    auto size() const
+         ^
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:127:12: note: Shadow variable
+    size_t size = min(size_, rhs.size_);
+           ^
+/tmp/tmp6mhkmmye/student/zaj11PtrCStringVector/PtrCStringVector.cpp:148:0: warning: The function 'free' is never used. [unusedFunction]
+void PtrCStringVector::free()
+^
