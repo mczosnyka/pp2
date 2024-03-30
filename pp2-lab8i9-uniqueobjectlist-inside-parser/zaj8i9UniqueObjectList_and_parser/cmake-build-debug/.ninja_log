@@ -1,0 +1,15 @@
+# ninja log v5
+1	741	7063808951909571	unitTests/CMakeFiles/unit_tests.dir/__/objectlist.cpp.obj	5bf34e8c53e105d9
+3229	3296	7060205984904092	lib/gtest.lib	46ebcf32d597e9a5
+12	700	7060205958993784	unitTests/CMakeFiles/unit_tests.dir/__/object.cpp.obj	29168875e594c0e0
+1620	2300	7064850293413086	bin/zad8CommandsParser_dlaStudentow.exe	3e8cc55de3e22e1
+1	1253	7063758216157272	unitTests/CMakeFiles/unit_tests.dir/objectUniqueListTest.cpp.obj	7257c996e7ddf5a6
+1	573	7063732934998105	unitTests/CMakeFiles/unit_tests.dir/__/stringObject.cpp.obj	32e5a3535c2c8e92
+29	1310	7060205965103334	unitTests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	c6c6c4cae5e2c672
+25	3228	7060205984243779	unitTests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	b9e4d75989bf8505
+3296	3341	7060205985419703	lib/gtest_main.lib	3d6aac044c77ad11
+741	915	7063808953303369	bin/unit_tests.exe	9db3c70ee0e362a7
+20	1380	7064850284291999	CMakeFiles/zad8CommandsParser_dlaStudentow.dir/objectlist.cpp.obj	7013588afe5507cc
+13	1388	7064850284302499	CMakeFiles/zad8CommandsParser_dlaStudentow.dir/object.cpp.obj	417e780ebd1873de
+1	1501	7064850285568216	CMakeFiles/zad8CommandsParser_dlaStudentow.dir/main.cpp.obj	57ea19d8ae4a4570
+27	1619	7064850286734227	CMakeFiles/zad8CommandsParser_dlaStudentow.dir/stringObject.cpp.obj	2f1e497a8d03f5cd

@@ -1,0 +1,133 @@
+{
+  "tests": 6,
+  "failures": 6,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2023-05-21T12:01:18Z",
+  "time": "0.013s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "CommandsParserSystemTester",
+      "tests": 2,
+      "failures": 2,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-05-21T12:01:18Z",
+      "time": "0.004s",
+      "testsuite": [
+        {
+          "name": "executingOurProgramWithoutAnyInput_expectedNoOutput",
+          "file": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp",
+          "line": 179,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-05-21T12:01:18Z",
+          "time": "0.002s",
+          "classname": "CommandsParserSystemTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp:184\nExpected equality of these values:\n  0\n  output.linesOfStdout_.size()\n    Which is: 2",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "testInvalidCommand",
+          "file": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp",
+          "line": 188,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-05-21T12:01:18Z",
+          "time": "0.002s",
+          "classname": "CommandsParserSystemTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp:195\nExpected equality of these values:\n  0\n  output.linesOfStdout_.size()\n    Which is: 2\nexpectedNoOutput, but realOutput:\nHello Michal Czosnyka!\nmake Your teacher: bazior[at]agh.edu.pl proud of you!\n",
+              "type": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CommandsParserSystemTester\/CommandsParserSystemTester",
+      "tests": 4,
+      "failures": 4,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-05-21T12:01:18Z",
+      "time": "0.008s",
+      "testsuite": [
+        {
+          "name": "testVariousScenariosUsingInputAndOutputFiles\/0",
+          "value_param": "\"sumStringObject\"",
+          "file": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp",
+          "line": 202,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-05-21T12:01:18Z",
+          "time": "0.002s",
+          "classname": "CommandsParserSystemTester\/CommandsParserSystemTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp:208\nExpected equality of these values:\n  expectedOutputFileLines.size()\n    Which is: 1\n  output.linesOfStdout_.size()\n    Which is: 2\nexpectedOutput:\nStringObject(\"Kazdy test, ktory przechodzi, to wiecej punktow!\")\n\nrealOutput:\nHello Michal Czosnyka!\nmake Your teacher: bazior[at]agh.edu.pl proud of you!\n",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "testVariousScenariosUsingInputAndOutputFiles\/1",
+          "value_param": "\"sumDoubleObject\"",
+          "file": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp",
+          "line": 202,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-05-21T12:01:18Z",
+          "time": "0.002s",
+          "classname": "CommandsParserSystemTester\/CommandsParserSystemTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp:208\nExpected equality of these values:\n  expectedOutputFileLines.size()\n    Which is: 1\n  output.linesOfStdout_.size()\n    Which is: 2\nexpectedOutput:\nDoubleObject(5.000000)\n\nrealOutput:\nHello Michal Czosnyka!\nmake Your teacher: bazior[at]agh.edu.pl proud of you!\n",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "testVariousScenariosUsingInputAndOutputFiles\/2",
+          "value_param": "\"mulDifferentTypes\"",
+          "file": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp",
+          "line": 202,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-05-21T12:01:18Z",
+          "time": "0.002s",
+          "classname": "CommandsParserSystemTester\/CommandsParserSystemTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp:208\nExpected equality of these values:\n  expectedOutputFileLines.size()\n    Which is: 4\n  output.linesOfStdout_.size()\n    Which is: 2\nexpectedOutput:\nIntObject(6)\nDoubleObject(10.000000)\nStringObject(\"Grazyna i JanuszGrazyna i Janusz\")\nComplexObject(8+4i)\n\nrealOutput:\nHello Michal Czosnyka!\nmake Your teacher: bazior[at]agh.edu.pl proud of you!\n",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "testVariousScenariosUsingInputAndOutputFiles\/3",
+          "value_param": "\"getByIndexComplexObject\"",
+          "file": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp",
+          "line": 202,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-05-21T12:01:18Z",
+          "time": "0.002s",
+          "classname": "CommandsParserSystemTester\/CommandsParserSystemTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpu5dzztfz\/student\/zaj8i9UniqueObjectList_and_parser\/systemTests\/executableTests.cpp:208\nExpected equality of these values:\n  expectedOutputFileLines.size()\n    Which is: 5\n  output.linesOfStdout_.size()\n    Which is: 2\nexpectedOutput:\nComplexObject(1+4i)\nComplexObject(4-2i)\nComplexObject(44)\nComplexObject(0+22i)\nComplexObject(0+1i)\n\nrealOutput:\nHello Michal Czosnyka!\nmake Your teacher: bazior[at]agh.edu.pl proud of you!\n",
+              "type": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

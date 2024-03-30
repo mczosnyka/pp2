@@ -1,0 +1,395 @@
+==255== Memcheck, a memory error detector
+==255== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==255== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==255== Command: /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build//bin/unit_tests
+==255== 
+Running main() from /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/unitTests/lib/googletest/src/gtest_main.cc
+[==========] Running 15 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 15 tests from ObjectListTester
+[ RUN      ] ObjectListTester.constructionWithDefaultConstructor_expectedAllElementsAreZero
+[       OK ] ObjectListTester.constructionWithDefaultConstructor_expectedAllElementsAreZero (16 ms)
+[ RUN      ] ObjectListTester.pushFrontOfElements_expectedSizeIncreases
+[       OK ] ObjectListTester.pushFrontOfElements_expectedSizeIncreases (27 ms)
+[ RUN      ] ObjectListTester.pushFrontOfDuplicatedElements_expectedSizeIncreasesOnlyWhenUniqueElementAdded
+[       OK ] ObjectListTester.pushFrontOfDuplicatedElements_expectedSizeIncreasesOnlyWhenUniqueElementAdded (9 ms)
+[ RUN      ] ObjectListTester.popFrontOfElements_expectedSizeDecreases
+[       OK ] ObjectListTester.popFrontOfElements_expectedSizeDecreases (6 ms)
+[ RUN      ] ObjectListTester.frontOfLists_expectedCorrectFirstElementReturned
+[       OK ] ObjectListTester.frontOfLists_expectedCorrectFirstElementReturned (19 ms)
+[ RUN      ] ObjectListTester.clear_expectedAllElementsRemoved
+[       OK ] ObjectListTester.clear_expectedAllElementsRemoved (7 ms)
+[ RUN      ] ObjectListTester.reverse_expectedAllElementsReversed
+[       OK ] ObjectListTester.reverse_expectedAllElementsReversed (8 ms)
+[ RUN      ] ObjectListTester.iteratorMethodsSyntaxCorrect_expectedChecksPasses
+[       OK ] ObjectListTester.iteratorMethodsSyntaxCorrect_expectedChecksPasses (3 ms)
+[ RUN      ] ObjectListTester.loopingWithIterators_expectedSuccess
+[       OK ] ObjectListTester.loopingWithIterators_expectedSuccess (6 ms)
+[ RUN      ] ObjectListTester.eraseAfterMiddleElement_expectedMiddleElementErased
+[       OK ] ObjectListTester.eraseAfterMiddleElement_expectedMiddleElementErased (15 ms)
+[ RUN      ] ObjectListTester.eraseMiddleElement_expectedMiddleElementErased
+[       OK ] ObjectListTester.eraseMiddleElement_expectedMiddleElementErased (14 ms)
+[ RUN      ] ObjectListTester.copyConstructorImplemented_expected2ListsWithTheSameElementsInTheSameOrder
+[       OK ] ObjectListTester.copyConstructorImplemented_expected2ListsWithTheSameElementsInTheSameOrder (8 ms)
+[ RUN      ] ObjectListTester.moveConstructorImplemented_expectedAllElementsMovedToOrderContainer
+/tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/unitTests/objectUniqueListTest.cpp:379: Failure
+Expected equality of these values:
+  0
+  myList.size()
+    Which is: 10
+[  FAILED  ] ObjectListTester.moveConstructorImplemented_expectedAllElementsMovedToOrderContainer (56 ms)
+[ RUN      ] ObjectListTester.assignmentOperatorCopying_expectedNewValues
+[       OK ] ObjectListTester.assignmentOperatorCopying_expectedNewValues (20 ms)
+[ RUN      ] ObjectListTester.assignmentOperatorMoving_expectedAllElementsMoved
+/tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/unitTests/objectUniqueListTest.cpp:488: Failure
+Expected equality of these values:
+  0
+  myList2.size()
+    Which is: 10
+[  FAILED  ] ObjectListTester.assignmentOperatorMoving_expectedAllElementsMoved (12 ms)
+[----------] 15 tests from ObjectListTester (249 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test suite ran. (298 ms total)
+[  PASSED  ] 13 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] ObjectListTester.moveConstructorImplemented_expectedAllElementsMovedToOrderContainer
+[  FAILED  ] ObjectListTester.assignmentOperatorMoving_expectedAllElementsMoved
+
+ 2 FAILED TESTS
+==255== 
+==255== HEAP SUMMARY:
+==255==     in use at exit: 7,977 bytes in 266 blocks
+==255==   total heap usage: 988 allocs, 722 frees, 169,836 bytes allocated
+==255== 
+==255== 16 bytes in 1 blocks are definitely lost in loss record 13 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x12658A: ObjectList::ObjectList() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x114E65: ObjectListTester_constructionWithDefaultConstructor_expectedAllElementsAreZero_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 16 bytes in 1 blocks are definitely lost in loss record 14 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x12658A: ObjectList::ObjectList() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11803D: ObjectListTester_iteratorMethodsSyntaxCorrect_expectedChecksPasses_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 16 bytes in 1 blocks are definitely lost in loss record 15 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x12658A: ObjectList::ObjectList() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11B69E: ObjectListTester_assignmentOperatorCopying_expectedNewValues_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 16 bytes in 1 blocks are definitely lost in loss record 16 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x12658A: ObjectList::ObjectList() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11BA14: ObjectListTester_assignmentOperatorCopying_expectedNewValues_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 16 bytes in 1 blocks are definitely lost in loss record 17 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x12658A: ObjectList::ObjectList() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11BA2F: ObjectListTester_assignmentOperatorCopying_expectedNewValues_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 40 bytes in 1 blocks are definitely lost in loss record 18 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x118BD8: ObjectListTester_eraseAfterMiddleElement_expectedMiddleElementErased_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x17CA96: RUN_ALL_TESTS() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 40 bytes in 1 blocks are definitely lost in loss record 19 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x119235: ObjectListTester_eraseMiddleElement_expectedMiddleElementErased_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x17CA96: RUN_ALL_TESTS() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 168 (16 direct, 152 indirect) bytes in 1 blocks are definitely lost in loss record 32 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11AA2E: ObjectListTester_assignmentOperatorCopying_expectedNewValues_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 400 bytes in 10 blocks are definitely lost in loss record 43 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x115BBA: ObjectListTester_pushFrontOfDuplicatedElements_expectedSizeIncreasesOnlyWhenUniqueElementAdded_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x17CA96: RUN_ALL_TESTS() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 400 bytes in 10 blocks are definitely lost in loss record 44 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x115FFD: ObjectListTester_popFrontOfElements_expectedSizeDecreases_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x17CA96: RUN_ALL_TESTS() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 400 bytes in 10 blocks are definitely lost in loss record 45 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x116946: ObjectListTester_frontOfLists_expectedCorrectFirstElementReturned_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x17CA96: RUN_ALL_TESTS() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 400 bytes in 10 blocks are definitely lost in loss record 46 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x117390: ObjectListTester_clear_expectedAllElementsRemoved_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x17CA96: RUN_ALL_TESTS() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 400 bytes in 10 blocks are definitely lost in loss record 47 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x117C78: ObjectListTester_reverse_expectedAllElementsReversed_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x17CA96: RUN_ALL_TESTS() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 504 (16 direct, 488 indirect) bytes in 1 blocks are definitely lost in loss record 48 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x118C2A: ObjectListTester_eraseAfterMiddleElement_expectedMiddleElementErased_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 504 (16 direct, 488 indirect) bytes in 1 blocks are definitely lost in loss record 49 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x119287: ObjectListTester_eraseMiddleElement_expectedMiddleElementErased_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 560 (16 direct, 544 indirect) bytes in 1 blocks are definitely lost in loss record 50 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1153CC: ObjectListTester_pushFrontOfElements_expectedSizeIncreases_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 560 (16 direct, 544 indirect) bytes in 1 blocks are definitely lost in loss record 51 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x115893: ObjectListTester_pushFrontOfDuplicatedElements_expectedSizeIncreasesOnlyWhenUniqueElementAdded_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 560 (16 direct, 544 indirect) bytes in 1 blocks are definitely lost in loss record 52 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x118800: ObjectListTester_loopingWithIterators_expectedSuccess_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 560 (16 direct, 544 indirect) bytes in 1 blocks are definitely lost in loss record 53 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1198BC: ObjectListTester_copyConstructorImplemented_expected2ListsWithTheSameElementsInTheSameOrder_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 560 (16 direct, 544 indirect) bytes in 1 blocks are definitely lost in loss record 54 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11A1DA: ObjectListTester_moveConstructorImplemented_expectedAllElementsMovedToOrderContainer_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 560 (16 direct, 544 indirect) bytes in 1 blocks are definitely lost in loss record 55 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11A93D: ObjectListTester_assignmentOperatorCopying_expectedNewValues_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 560 (16 direct, 544 indirect) bytes in 1 blocks are definitely lost in loss record 56 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11C3C5: ObjectListTester_assignmentOperatorMoving_expectedAllElementsMoved_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== 721 (16 direct, 705 indirect) bytes in 1 blocks are definitely lost in loss record 57 of 57
+==255==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==255==    by 0x1266D2: ObjectList::push_front(Object*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x11C490: ObjectListTester_assignmentOperatorMoving_expectedAllElementsMoved_Test::TestBody() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x167908: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x15FC9C: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13A933: testing::Test::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13B44E: testing::TestInfo::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x13BD8C: testing::TestSuite::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14C13C: testing::internal::UnitTestImpl::RunAllTests() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x1689AF: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x160EBC: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255==    by 0x14A75E: testing::UnitTest::Run() (in /tmp/tmpu5dzztfz/student/zaj8i9UniqueObjectList_and_parser/build/bin/unit_tests)
+==255== 
+==255== LEAK SUMMARY:
+==255==    definitely lost: 2,336 bytes in 68 blocks
+==255==    indirectly lost: 5,641 bytes in 198 blocks
+==255==      possibly lost: 0 bytes in 0 blocks
+==255==    still reachable: 0 bytes in 0 blocks
+==255==         suppressed: 0 bytes in 0 blocks
+==255== 
+==255== For lists of detected and suppressed errors, rerun with: -s
+==255== ERROR SUMMARY: 23 errors from 23 contexts (suppressed: 0 from 0)
