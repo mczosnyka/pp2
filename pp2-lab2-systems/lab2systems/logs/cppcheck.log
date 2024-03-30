@@ -1,0 +1,45 @@
+/tmp/tmp70yuhqk_/student/lab2systems/linux.h:66:9: warning: Variable 'distribution_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+        distribution_ = distribution;
+        ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.h:64:5: warning: Class 'Linux' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    Linux(string distribution) {
+    ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.h:64:18: warning: Function parameter 'distribution' should be passed by const reference. [passedByValue]
+    Linux(string distribution) {
+                 ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:21:28: warning: Function parameter 'user_name' should be passed by const reference. [passedByValue]
+int Linux::add_user(string user_name, string password){
+                           ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:21:46: warning: Function parameter 'password' should be passed by const reference. [passedByValue]
+int Linux::add_user(string user_name, string password){
+                                             ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:42:44: warning: Function parameter 'graphic_environment' should be passed by const reference. [passedByValue]
+void Linux::set_graphic_environment(string graphic_environment){
+                                           ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:30:23: warning: Parameter 'user_id' can be declared as reference to const [constParameter]
+User Linux::user(int &user_id){
+                      ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:34:40: warning: Parameter 'user_id' can be declared as reference to const [constParameter]
+string Linux::user_home_directory(int &user_id) {
+                                       ^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:13:0: warning: The function 'distribution' is never used. [unusedFunction]
+string Linux::distribution(){
+^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:17:0: warning: The function 'open_source_sympathizers' is never used. [unusedFunction]
+size_t Linux::open_source_sympathizers(){
+^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:21:0: warning: The function 'add_user' is never used. [unusedFunction]
+int Linux::add_user(string user_name, string password){
+^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:30:0: warning: The function 'user' is never used. [unusedFunction]
+User Linux::user(int &user_id){
+^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:34:0: warning: The function 'user_home_directory' is never used. [unusedFunction]
+string Linux::user_home_directory(int &user_id) {
+^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:42:0: warning: The function 'set_graphic_environment' is never used. [unusedFunction]
+void Linux::set_graphic_environment(string graphic_environment){
+^
+/tmp/tmp70yuhqk_/student/lab2systems/linux.cpp:46:0: warning: The function 'graphic_environment' is never used. [unusedFunction]
+std::optional<std::string> Linux::graphic_environment() const{
+^
