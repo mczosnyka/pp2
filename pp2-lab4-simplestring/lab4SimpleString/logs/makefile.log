@@ -1,0 +1,32 @@
+[ 14%] Building CXX object tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 28%] Linking CXX static library ../../../lib/libgtest.a
+[ 28%] Built target gtest
+[ 42%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 57%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 57%] Built target gtest_main
+[ 71%] Building CXX object tests/CMakeFiles/tests.dir/simpleStringTests.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/__/simpleString.cpp.o
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:11:6: warning: #warning is a GCC extension
+   11 |     #warning "Klasa jest do zaimplementowania. Instrukcja w pliku naglowkowym"
+      |      ^~~~~~~
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:11:6: warning: #warning "Klasa jest do zaimplementowania. Instrukcja w pliku naglowkowym" [-Wcpp]
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp: In member function ‘SimpleString SimpleString::substr(size_t, size_t) const’:
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:138:11: warning: comparison of unsigned expression in ‘>= 0’ is always true [-Wtype-limits]
+  138 |     if(pos>=0 && pos<= size_ && count < size_){
+      |        ~~~^~~
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:141:15: warning: comparison of unsigned expression in ‘< 0’ is always false [-Wtype-limits]
+  141 |     if (count < 0 || count > size_){
+      |         ~~~~~~^~~
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp: In member function ‘bool SimpleString::equal_to(SimpleString, bool) const’:
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+   97 | };
+      | ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp: In member function ‘int SimpleString::compare(SimpleString, bool) const’:
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+  134 | }
+      | ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/tests/simpleStringTests.cpp:30:6: warning: the program should also define ‘void operator delete [](void*, std::size_t)’ [-Wsized-deallocation]
+   30 | void operator delete[](void* memory) noexcept
+      |      ^~~~~~~~
+[100%] Linking CXX executable ../bin/tests
+[100%] Built target tests

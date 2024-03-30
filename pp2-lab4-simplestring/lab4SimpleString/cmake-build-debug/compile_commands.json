@@ -1,0 +1,57 @@
+[
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17 /FoCMakeFiles\\lab4SimpleString.dir\\main.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\main.cpp",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\main.cpp"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17 /FoCMakeFiles\\lab4SimpleString.dir\\simpleString.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\simpleString.cpp",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\simpleString.cpp"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -external:IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -external:IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest -external:W0 /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17 /Fotests\\CMakeFiles\\tests.dir\\simpleStringTests.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\simpleStringTests.cpp",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\simpleStringTests.cpp"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -external:IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -external:IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest -external:W0 /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17 /Fotests\\CMakeFiles\\tests.dir\\__\\simpleString.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\simpleString.cpp",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\simpleString.cpp"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17 /Fotests\\lib\\googlemock\\CMakeFiles\\gmock.dir\\__\\googletest\\src\\gtest-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest-all.cc",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest-all.cc"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17 /Fotests\\lib\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\src\\gmock-all.cc",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\src\\gmock-all.cc"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17 /Fotests\\lib\\googlemock\\CMakeFiles\\gmock_main.dir\\__\\googletest\\src\\gtest-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest-all.cc",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest-all.cc"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17 /Fotests\\lib\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\src\\gmock-all.cc",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\src\\gmock-all.cc"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17 /Fotests\\lib\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\src\\gmock_main.cc",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googlemock\\src\\gmock_main.cc"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17 /Fotests\\lib\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest-all.cc",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest-all.cc"
+},
+{
+  "directory": "C:/Projekty/CLionProjects/pp2-lab4-simplestring/lab4SimpleString/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1435~1.322\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -external:IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\include -external:IC:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest -external:W0 /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17 /Fotests\\lib\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest_main.cc",
+  "file": "C:\\Projekty\\CLionProjects\\pp2-lab4-simplestring\\lab4SimpleString\\tests\\lib\\googletest\\src\\gtest_main.cc"
+}
+]

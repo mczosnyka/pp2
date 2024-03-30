@@ -1,0 +1,20 @@
+# ninja log v5
+568	707	7016501857493979	bin/tests.exe	8e302df190d743d6
+1	567	7016501856311026	tests/CMakeFiles/tests.dir/__/simpleString.cpp.obj	dd3b4954edc204fd
+15	1301	7011990399839249	tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	9c44d8c1b85ea973
+111	226	7015366755449431	lib/gtest_main.lib	ea7ac6c3864dd8ab
+10	2589	7011990412662810	tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	2ddf73dc58db64e
+6	945	7016443824317201	tests/CMakeFiles/tests.dir/simpleStringTests.cpp.obj	2f10548d9990187b
+14	111	7015366754448009	lib/gtest.lib	5605068abc27f232
+1	573	7016502508039734	tests/CMakeFiles/tests.dir/__/simpleString.cpp.obj	dd3b4954edc204fd
+573	731	7016502509408215	bin/tests.exe	8e302df190d743d6
+1	567	7016504728508760	tests/CMakeFiles/tests.dir/__/simpleString.cpp.obj	dd3b4954edc204fd
+567	746	7016504729861930	bin/tests.exe	8e302df190d743d6
+1	830	7016515443574212	tests/CMakeFiles/tests.dir/__/simpleString.cpp.obj	dd3b4954edc204fd
+831	987	7016515444852501	bin/tests.exe	8e302df190d743d6
+1	924	7016525258385986	tests/CMakeFiles/tests.dir/__/simpleString.cpp.obj	dd3b4954edc204fd
+925	1098	7016525259782986	bin/tests.exe	8e302df190d743d6
+0	2028	7016526057506259	tests/CMakeFiles/tests.dir/__/simpleString.cpp.obj	dd3b4954edc204fd
+2029	3050	7016526067158964	bin/tests.exe	8e302df190d743d6
+1	969	7030155572991416	tests/CMakeFiles/tests.dir/__/simpleString.cpp.obj	dd3b4954edc204fd
+970	1221	7030155575127561	bin/tests.exe	8e302df190d743d6

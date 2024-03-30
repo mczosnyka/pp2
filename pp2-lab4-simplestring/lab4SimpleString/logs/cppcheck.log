@@ -1,0 +1,72 @@
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.h:133:5: warning: Class 'SimpleString' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    SimpleString(const char* text);
+    ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:23:48: warning: Class 'SimpleString' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq]
+SimpleString::SimpleString(const char* text) : data_(new char[strlen(text)+1]), size_(strlen(text)), capacity_(strlen(text)){
+                                               ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:81:24: warning: Condition 'case_sensitive==false' is always true [knownConditionTrueFalse]
+    if (case_sensitive == false){
+                       ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:75:24: note: Assuming that condition 'case_sensitive==true' is not redundant
+    if (case_sensitive == true){
+                       ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:81:24: note: Condition 'case_sensitive==false' is always true
+    if (case_sensitive == false){
+                       ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:118:24: warning: Condition 'case_sensitive==false' is always true [knownConditionTrueFalse]
+    if (case_sensitive == false){
+                       ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:114:24: note: Assuming condition 'case_sensitive==true' is false
+    if (case_sensitive == true){
+                       ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:118:24: note: Condition 'case_sensitive==false' is always true
+    if (case_sensitive == false){
+                       ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:144:19: warning: Condition 'size_<count' is always false [knownConditionTrueFalse]
+    else if (size_<count){
+                  ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:141:28: note: Assuming condition 'count>size_' is false
+    if (count < 0 || count > size_){
+                           ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:144:19: note: Condition 'size_<count' is always false
+    else if (size_<count){
+                  ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:138:11: warning: Unsigned expression 'pos' can't be negative so it is unnecessary to test it. [unsignedPositive]
+    if(pos>=0 && pos<= size_ && count < size_){
+          ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:141:15: warning: Checking if unsigned expression 'count' is less than zero. [unsignedLessThanZero]
+    if (count < 0 || count > size_){
+              ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:73:42: warning: Function parameter 'new_string' should be passed by const reference. [passedByValue]
+bool SimpleString::equal_to(SimpleString new_string, bool case_sensitive) const{
+                                         ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:112:40: warning: Function parameter 'newstring' should be passed by const reference. [passedByValue]
+int SimpleString::compare(SimpleString newstring, bool case_sensitive) const{
+                                       ^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:44:0: warning: The function 'size' is never used. [unusedFunction]
+size_t SimpleString::size() const{
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:48:0: warning: The function 'capacity' is never used. [unusedFunction]
+size_t SimpleString::capacity() const{
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:51:0: warning: The function 'data' is never used. [unusedFunction]
+char* SimpleString::data() const{
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:59:0: warning: The function 'instances' is never used. [unusedFunction]
+size_t SimpleString::instances(){
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:63:0: warning: The function 'assign' is never used. [unusedFunction]
+void SimpleString::assign(const char* new_text){
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:73:0: warning: The function 'equal_to' is never used. [unusedFunction]
+bool SimpleString::equal_to(SimpleString new_string, bool case_sensitive) const{
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:99:0: warning: The function 'append' is never used. [unusedFunction]
+void SimpleString::append(SimpleString new_string){
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:112:0: warning: The function 'compare' is never used. [unusedFunction]
+int SimpleString::compare(SimpleString newstring, bool case_sensitive) const{
+^
+/tmp/tmpflvsb9_5/student/lab4SimpleString/simpleString.cpp:136:0: warning: The function 'substr' is never used. [unusedFunction]
+SimpleString SimpleString::substr(size_t pos, size_t count)const{
+^
