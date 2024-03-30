@@ -1,0 +1,9 @@
+/tmp/tmpto6lem_t/student/lab5ContainerBenchmark/containerWrapper.cpp:25:0: warning: The function 'push_front' is never used. [unusedFunction]
+void VectorWrapper::push_front(const value_type& element) {
+^
+/tmp/tmpto6lem_t/student/lab5ContainerBenchmark/containerWrapper.cpp:50:0: warning: The function 'count' is never used. [unusedFunction]
+VectorWrapper::value_type VectorWrapper::count() const {
+^
+/tmp/tmpto6lem_t/student/lab5ContainerBenchmark/containerWrapper.cpp:66:0: warning: The function 'pop_front' is never used. [unusedFunction]
+VectorWrapper::value_type VectorWrapper::pop_front(){
+^

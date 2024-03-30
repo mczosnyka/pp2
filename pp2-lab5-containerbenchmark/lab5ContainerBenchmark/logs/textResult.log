@@ -1,0 +1,44 @@
+Running main() from /tmp/tmpto6lem_t/student/lab5ContainerBenchmark/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from ContainerWrapperTester
+[ RUN      ] ContainerWrapperTester.constructionLotsOfElementsWithDefaultConstructor_expectedNoCrash
+[INFO] Created 100000 obects, with size: 781 kb
+[       OK ] ContainerWrapperTester.constructionLotsOfElementsWithDefaultConstructor_expectedNoCrash (10 ms)
+[ RUN      ] ContainerWrapperTester.constructionFromArray_expectedElementsCopied
+[       OK ] ContainerWrapperTester.constructionFromArray_expectedElementsCopied (1 ms)
+[ RUN      ] ContainerWrapperTester.pushBackManyElements
+[       OK ] ContainerWrapperTester.pushBackManyElements (4 ms)
+[ RUN      ] ContainerWrapperTester.pushFrontManyElements
+[       OK ] ContainerWrapperTester.pushFrontManyElements (2262 ms)
+[ RUN      ] ContainerWrapperTester.insertingInRandomPositionManyElements
+[       OK ] ContainerWrapperTester.insertingInRandomPositionManyElements (978 ms)
+[ RUN      ] ContainerWrapperTester.randomAccess
+[       OK ] ContainerWrapperTester.randomAccess (9 ms)
+[ RUN      ] ContainerWrapperTester.sorting
+[       OK ] ContainerWrapperTester.sorting (27 ms)
+[ RUN      ] ContainerWrapperTester.randomErase
+[       OK ] ContainerWrapperTester.randomErase (1063 ms)
+[ RUN      ] ContainerWrapperTester.count_expectedAllElementsCounted
+[       OK ] ContainerWrapperTester.count_expectedAllElementsCounted (1 ms)
+[ RUN      ] ContainerWrapperTester.findElement
+/tmp/tmpto6lem_t/student/lab5ContainerBenchmark/tests/containerWrapperTests.cpp:181: Failure
+Expected equality of these values:
+  std::numeric_limits<size_t>::max()
+    Which is: 18446744073709551615
+  wrapper.find(notExistingElement)
+    Which is: 100000
+[  FAILED  ] ContainerWrapperTester.findElement (1 ms)
+[ RUN      ] ContainerWrapperTester.popFront
+[       OK ] ContainerWrapperTester.popFront (2208 ms)
+[ RUN      ] ContainerWrapperTester.popBack
+[       OK ] ContainerWrapperTester.popBack (18 ms)
+[----------] 12 tests from ContainerWrapperTester (6627 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (6627 ms total)
+[  PASSED  ] 11 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ContainerWrapperTester.findElement
+
+ 1 FAILED TEST

@@ -1,0 +1,94 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Projekty/CLionProjects/pp2-lab5-containerbenchmark/lab5ContainerBenchmark/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_e5fb2 && [1/2] Building C object CMakeFiles\cmTC_e5fb2.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_e5fb2.exe
+FAILED: cmTC_e5fb2.exe 
+cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_e5fb2.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests  -- C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_e5fb2.dir\CMakeCCompilerABI.c.obj  /out:cmTC_e5fb2.exe /implib:cmTC_e5fb2.lib /pdb:cmTC_e5fb2.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+FINAL LINK: command "C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_e5fb2.dir\CMakeCCompilerABI.c.obj /out:cmTC_e5fb2.exe /implib:cmTC_e5fb2.lib /pdb:cmTC_e5fb2.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_e5fb2.dir/intermediate.manifest CMakeFiles\cmTC_e5fb2.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: błąd zapisu do bazy danych "C:\Projekty\CLionProjects\pp2-lab5-containerbenchmark\lab5ContainerBenchmark\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_e5fb2.pdb" programu; sprawdź, czy ilość miejsca na dysku jest wystarczająca, czy ścieżka jest prawidłowa i czy uprawnienia są wystarczające
+ninja: build stopped: subcommand failed.
+
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Projekty/CLionProjects/pp2-lab5-containerbenchmark/lab5ContainerBenchmark/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_665c6 && [1/2] Building C object CMakeFiles\cmTC_665c6.dir\src.c.obj
+FAILED: CMakeFiles/cmTC_665c6.dir/src.c.obj 
+C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_665c6.dir\src.c.obj /FdCMakeFiles\cmTC_665c6.dir\ /FS -c C:\Projekty\CLionProjects\pp2-lab5-containerbenchmark\lab5ContainerBenchmark\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+C:\Projekty\CLionProjects\pp2-lab5-containerbenchmark\lab5ContainerBenchmark\cmake-build-debug\CMakeFiles\CMakeTmp\src.c(1): fatal error C1083: Nie można otworzyć pliku dołącz: 'pthread.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Projekty/CLionProjects/pp2-lab5-containerbenchmark/lab5ContainerBenchmark/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_fadbf && [1/2] Building C object CMakeFiles\cmTC_fadbf.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_fadbf.exe
+FAILED: cmTC_fadbf.exe 
+cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_fadbf.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests  -- C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_fadbf.dir\CheckFunctionExists.c.obj  /out:cmTC_fadbf.exe /implib:cmTC_fadbf.lib /pdb:cmTC_fadbf.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_fadbf.dir\CheckFunctionExists.c.obj /out:cmTC_fadbf.exe /implib:cmTC_fadbf.lib /pdb:cmTC_fadbf.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_fadbf.dir/intermediate.manifest CMakeFiles\cmTC_fadbf.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: nie można otworzyć pliku "pthreads.lib"
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Projekty/CLionProjects/pp2-lab5-containerbenchmark/lab5ContainerBenchmark/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_6ca0c && [1/2] Building C object CMakeFiles\cmTC_6ca0c.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_6ca0c.exe
+FAILED: cmTC_6ca0c.exe 
+cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_6ca0c.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests  -- C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_6ca0c.dir\CheckFunctionExists.c.obj  /out:cmTC_6ca0c.exe /implib:cmTC_6ca0c.lib /pdb:cmTC_6ca0c.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_6ca0c.dir\CheckFunctionExists.c.obj /out:cmTC_6ca0c.exe /implib:cmTC_6ca0c.lib /pdb:cmTC_6ca0c.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_6ca0c.dir/intermediate.manifest CMakeFiles\cmTC_6ca0c.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: nie można otworzyć pliku "pthread.lib"
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function shm_open exists in the rt failed with the following output:
+Change Dir: C:/Projekty/CLionProjects/pp2-lab5-containerbenchmark/lab5ContainerBenchmark/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_8eda5 && [1/2] Building C object CMakeFiles\cmTC_8eda5.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_8eda5.exe
+FAILED: cmTC_8eda5.exe 
+cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_8eda5.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests  -- C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_8eda5.dir\CheckFunctionExists.c.obj  /out:cmTC_8eda5.exe /implib:cmTC_8eda5.lib /pdb:cmTC_8eda5.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  rt.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\MIB055~1\2022\ENTERP~1\VC\Tools\MSVC\1435~1.322\bin\Hostx86\x86\link.exe /nologo CMakeFiles\cmTC_8eda5.dir\CheckFunctionExists.c.obj /out:cmTC_8eda5.exe /implib:cmTC_8eda5.lib /pdb:cmTC_8eda5.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console rt.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_8eda5.dir/intermediate.manifest CMakeFiles\cmTC_8eda5.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: nie można otworzyć pliku "rt.lib"
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C++ SOURCE FILE Test BENCHMARK_HAS_O3_FLAG failed with the following output:
+Change Dir: C:/Projekty/CLionProjects/pp2-lab5-containerbenchmark/lab5ContainerBenchmark/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_2a53a && [1/2] Building CXX object CMakeFiles\cmTC_2a53a.dir\src.cxx.obj
+cl : Wiersz polecenia warning D9002 : ignorowanie nieznanej opcji "-O3"
+[2/2] Linking CXX executable cmTC_2a53a.exe
+
+
+Source file was:
+int main() { return 0; }

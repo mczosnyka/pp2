@@ -1,0 +1,148 @@
+{
+  "tests": 12,
+  "failures": 1,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2023-04-10T12:11:56Z",
+  "time": "6.627s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ContainerWrapperTester",
+      "tests": 12,
+      "failures": 1,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-04-10T12:11:56Z",
+      "time": "6.627s",
+      "testsuite": [
+        {
+          "name": "constructionLotsOfElementsWithDefaultConstructor_expectedNoCrash",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 35,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:11:56Z",
+          "time": "0.01s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "constructionFromArray_expectedElementsCopied",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 49,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:11:56Z",
+          "time": "0.001s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "pushBackManyElements",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 60,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:11:56Z",
+          "time": "0.004s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "pushFrontManyElements",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 75,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:11:56Z",
+          "time": "2.262s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "insertingInRandomPositionManyElements",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 90,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:11:59Z",
+          "time": "0.978s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "randomAccess",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 106,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:12:00Z",
+          "time": "0.009s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "sorting",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 122,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:12:00Z",
+          "time": "0.027s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "randomErase",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 141,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:12:00Z",
+          "time": "1.063s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "count_expectedAllElementsCounted",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 159,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:12:01Z",
+          "time": "0.001s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "findElement",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 173,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:12:01Z",
+          "time": "0.001s",
+          "classname": "ContainerWrapperTester",
+          "failures": [
+            {
+              "failure": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp:181\nExpected equality of these values:\n  std::numeric_limits<size_t>::max()\n    Which is: 18446744073709551615\n  wrapper.find(notExistingElement)\n    Which is: 100000",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "popFront",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 194,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:12:01Z",
+          "time": "2.208s",
+          "classname": "ContainerWrapperTester"
+        },
+        {
+          "name": "popBack",
+          "file": "\/tmp\/tmpto6lem_t\/student\/lab5ContainerBenchmark\/tests\/containerWrapperTests.cpp",
+          "line": 214,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-04-10T12:12:03Z",
+          "time": "0.018s",
+          "classname": "ContainerWrapperTester"
+        }
+      ]
+    }
+  ]
+}
